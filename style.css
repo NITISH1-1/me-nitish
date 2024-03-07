@@ -1,37 +1,5 @@
-html,
-body {
-  position: relative;
-  height: 100%;
-}
-
-body {
-  background: #eee;
-  font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-  font-size: 14px;
-  color: #000;
-  margin: 0;
-  padding: 0;
-}
-
-swiper-container {
-  width: 100%;
-  height: 100%;
-}
-
-swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-}
-
-swiper-slide img {
-  display: block;
-  width: 100%;
-  height: 100%;
-  object-fit: cover;
+html,body{
+  font-family: "Open Sans", sans-serif;
 }
 
 .side-bar {
@@ -89,14 +57,24 @@ swiper-slide img {
     }
   }
 
-  .tab-lists{
-    ol li{
-      color: white;
+  .tab-lists {
+    ol li {
+      color: rgb(153, 152, 152);
       font-size: 16px;
-      color: gray;
       list-style: none;
-      padding: 8px;
-      margin-left: 8px;
+      padding: 14px;
+      cursor: pointer;
+
+      &:hover {
+        color: white !important;
+        border-radius: 50px;
+        border-color: #494949 !important;
+        transition: all 0.3s ease 0s;
+
+        i {
+          color: #149ddd;
+        }
+      }
     }
   }
 }
